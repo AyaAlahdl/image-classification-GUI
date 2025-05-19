@@ -1,0 +1,13 @@
+
+opencv-python
+tensorflow==2.8.0
+tensorflow-cpu==2.8.0
+numpy
+pandas
+sys
+python=3.10
+pyqt5
+pyqt5-tools
+seaborn
+Qtimer
+glob

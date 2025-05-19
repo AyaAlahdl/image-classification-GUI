@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>718</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #efefef;
+    padding: 20px;
+}
+
+QPushButton {
+    border: 1px solid #d9d9d9;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    color: #515151;
+    font-weight: 500;
+    background: transparent;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+    border: 1px solid #aedaa6;
+    color: #aedaa6;
+}
+
+QLabel {
+    color: #515151;
+}
+
+QLabel#label_2 {
+    background-color: rgb(255, 105, 240);
+    border-radius: 5px;
+}
+</string>
+  </property>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>170</y>
+     <width>391</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGraphicsView{
+ border: 1px solid rgb(217, 217, 217);
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>12</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDialog {
+    background: #aedaa6;
+    font-family: &quot;Raleway&quot;, sans-serif;
+}
+
+QFrame#Card {
+    background: white;
+    width: 650px; /* Not used in stylesheet, handle via layout or setFixedWidth() */
+    border: none;
+    border-radius: 6px;
+    margin: auto;
+    padding: 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16), 0px 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+QFrame#Card:hover {
+    box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+/* Nav Bar inside Card */
+QWidget#NavBar {
+    color: #727272;
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 2px solid #efefef;
+    font-size: 12px;
+}
+
+/* Heart Icon (can be QLabel with SVG pixmap) */
+QLabel#HeartIcon:hover {
+    color: red;
+}
+
+/* Photo Section */
+QWidget#PhotoSection {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Description Section */
+QWidget#DescriptionSection {
+    padding: 30px;
+    border-left: 2px solid #efefef;
+}
+
+/* Headings */
+QLabel[role=&quot;h1&quot;] {
+    color: #515151;
+    font-weight: 300;
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+QLabel[role=&quot;h2&quot;] {
+    color: #515151;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+QLabel[role=&quot;h4&quot;] {
+    color: #727272;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* Paragraph text */
+QLabel[role=&quot;p&quot;] {
+    font-size: 12px;
+    line-height: 20px;
+    color: #727272;
+    padding: 20px 0;
+}
+
+/* Buttons */
+QPushButton {
+    border: 1px solid #d9d9d9;
+    background: none;
+    padding: 8px 0;
+    color: #515151;
+    text-transform: uppercase;
+    width: 125px;
+    font-weight: 500;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+QPushButton:hover {
+    border: 1px solid #aedaa6;
+    color: #aedaa6;
+    cursor: pointer;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Browers </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 14pt &quot;PMingLiU-ExtB&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Select a model.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>120</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#label_2 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>12</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Prediction</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>391</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>28</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#label_3{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Computer Vision Prototype</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>280</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>12</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(216, 215, 209);</string>
+   </property>
+   <property name="text">
+    <string>CNN</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>330</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>12</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>VGG 16</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>380</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>12</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>VGG 19</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>12</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>ResNet152V2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>480</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>12</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>InceptionV3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>530</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>12</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>DenseNet</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>721</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#label_5 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>118</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>60</y>
+     <width>741</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+ border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #d9d9d9;
+</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>90</y>
+     <width>20</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 1px solid #d9d9d9;
+</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_meta">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>580</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PMingLiU-ExtB</family>
+     <pointsize>10</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string> stacked meta model</string>
+   </property>
+  </widget>
+  <zorder>label_5</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>pushButton_5</zorder>
+  <zorder>pushButton_6</zorder>
+  <zorder>pushButton_7</zorder>
+  <zorder>pushButton_8</zorder>
+  <zorder>graphicsView</zorder>
+  <zorder>progressBar</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_2</zorder>
+  <zorder>line_2</zorder>
+  <zorder>line</zorder>
+  <zorder>pushButton_meta</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions (if any)
+*.so
+
+# Virtual environments
+myenv310/
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+
+# IDE specific (VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build / distribution folders
+build/
+dist/
+*.egg-info/
+.eggs/
+lib/
+lib64/
+parts/
+develop-eggs/
+sdist/
+var/
+wheels/
+downloads/
+
+# Logs, backups, temp files
+*.log
+*.bak
+*.tmp
+*.sqlite3
+.DS_Store
+Thumbs.db
+
+# Machine Learning / TensorFlow related
+checkpoints/
+*.h5
+*.pb
+*.tflite
+saved_model/
+runs/
+logs/
+
+# PyQt5 generated UI Python files (optional)
+# Uncomment below if you auto-generate from .ui files and want to ignore them
+# ui_*.py
+
+# PyQt5 project temp files
+*.qrc~
+*.qmlc
+*.jsc
+*.qmlproject.user
+
+# Jupyter notebook checkpoints (if any)
+.ipynb_checkpoints/
