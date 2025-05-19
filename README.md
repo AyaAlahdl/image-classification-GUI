@@ -10,12 +10,6 @@ This project applies advanced image classification techniques using multiple dee
 - [Models and Techniques](#models-and-techniques)  
 - [Key Features](#key-features)  
 - [Installation](#installation)  
-- [Usage](#usage)  
-- [Example](#example)  
-- [Screenshots](#screenshots)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Contact](#contact)  
 
 ---
 
@@ -61,7 +55,7 @@ The goal of this project is to build a reliable image classification pipeline th
     pip install -r requirements.txt
     ```
 
-> **Note:** This project requires Python 3.7+ and packages including TensorFlow, OpenCV, scikit-learn, PyQt5 (or Tkinter), NumPy, and Matplotlib.
+> **Note:** This project requires Python 3.8 and packages including TensorFlow, OpenCV, scikit-learn, PyQt5 (or Tkinter), NumPy, and Matplotlib.
 
 ---
 
@@ -70,4 +64,4 @@ The goal of this project is to build a reliable image classification pipeline th
 Run the application:
 
 ```bash
-python app.py
+python GUI app.py
